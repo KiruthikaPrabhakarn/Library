@@ -1,0 +1,27 @@
+<table width="300" align="center">
+	<tr>
+	  <td>
+		<form id="login" #insert="ngForm" (ngSubmit)="insertLogin(insert)">
+
+		  <h1 class="h3 mb-3 fw-normal">Welcome To Login</h1>
+
+		  <div class="form-floating">
+			<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" ngModel>
+			<label for="floatingInput">Email address</label>
+		  </div>
+
+		  <div class="form-floating">
+			<input type="password" class="form-control" id="password"  name="password" placeholder="Password" ngModel>
+			<label for="floatingPassword">Password</label>
+		  </div>
+
+		  <button class="w-100 btn btn-lg btn-primary" type="submit" name="Login" >Sign in</button>
+		  <label> If Not A Member: </label>
+		  <button class="w-100 btn btn-lg btn-primary" type="submit" name="register"
+			routerLink="/registration">Register</button>
+
+		</form>
+
+	  </td>
+	</tr>
+  </table>
